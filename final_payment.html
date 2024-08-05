@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loading-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 10px solid #ccc;
+            border-top-color: #007bff;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-circle"></div>
+        <p>Processing...</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.loading-container').style.display = 'none';
+        }, 600000); // 600000 milliseconds = 10 minutes
+    </script>
+</body>
+</html>

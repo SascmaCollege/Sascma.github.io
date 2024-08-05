@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f0f0f0;
+        }
+        
+        .payment-options {
+            margin-top: 20px;
+        }
+        
+        .payment-options form {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .payment-options button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .payment-options button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h2> <center> <b> Making Payment With UPI </b> </center> </h2>
+    <table>
+        <tbody>
+            <tr>
+                <th scope="row"> Transaction ID </th>
+                <td> 240804192672835 </td>
+            </tr>
+            <tr>
+                <th scope="row"> College ID </th>
+                <td> SASCMA ENGLISH MEDIUM COMMERCE COLLEGE </td>
+            </tr>
+            <tr>
+                <th scope="row"> Fee Amount  </th>
+                <td> Rs. 17295 </td>
+            </tr>
+            <tr>
+                <th scope="row"> GST </th>
+                <td> Rs. 0.00</td>
+            </tr>
+            <tr>
+                <th scope="row"> Total </th>
+                <td> <b> Rs. 17295 </b> </td>
+            </tr>
+        </tbody>        
+    </table>
+    <br>
+    <br>
+    
+    <div class="payment-options">
+        <form action="">
+            <label for="upi_id"> Pay with UPI ID: </label>
+            <input type="text" id="upi_id" name="upi_id" value="" required>
+            <button> <a href="/final_payment.html"> Pay </a> </button>
+        </form>
+        <form action="">    
+            OR 
+            <br> 
+            <br>
+            <button> <a href="/final_payment.html"> Pay with QR code </a> </button>
+        </form>
+    </div>
+    
+</body>
+</html>
